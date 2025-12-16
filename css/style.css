@@ -1,0 +1,55 @@
+/* Variables */
+:root {
+    --var1: #e6e6e6;
+    --var2: #f7b600;
+    --var3: #4e4e4e;
+}
+
+/* Cleaning default formatting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: var(--var1);
+}
+
+/* Layout */
+#header-area {
+    background-color: var(--var2);
+    padding: 15px;
+    text-align: center;
+}
+
+#logo-area, #menu-area {
+    padding: 10px;
+}
+
+/** Menu formatting **/
+a {
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+a:link, a:visited {
+    color: #ffffff;
+}
+
+a:hover {
+    background-color: #ffffff;
+    color: var(--var2);
+}
+
+/** Genereal formatting **/
+h1 {
+    color: var(--var3);
+    font-size: 2.5em;
+}
+
+.white {
+    color: #ffffff;
+}
