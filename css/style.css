@@ -3,6 +3,7 @@
     --var1: #e6e6e6;
     --var2: #f7b600;
     --var3: #4e4e4e;
+    --var4: #cccccc;
 }
 
 /* Cleaning default formatting */
@@ -29,6 +30,40 @@ body {
     padding: 10px;
 }
 
+main {
+    width: 920px;
+    margin: 0 auto;
+}
+
+#posting-area, #side-content {
+    background-color: orange;
+}
+
+#posting-area {
+    width: 660px;
+    float: left;
+}
+
+#side-content {
+    width: 240px;
+    float: right;
+}
+
+.posting {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+footer {
+    clear: both;
+    background-color: var(--var4);
+    width: 920px;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+}
+
 /** Menu formatting **/
 a {
     text-decoration: none;
@@ -36,11 +71,11 @@ a {
 }
 
 a:link, a:visited {
-    color: #ffffff;
+    color: #fff;
 }
 
 a:hover {
-    background-color: #ffffff;
+    background-color: #fff;
     color: var(--var2);
 }
 
@@ -51,5 +86,5 @@ h1 {
 }
 
 .white {
-    color: #ffffff;
+    color: #fff;
 }
