@@ -4,6 +4,8 @@
     --var2: #f7b600;
     --var3: #4e4e4e;
     --var4: #cccccc;
+    --var5: #f4f4f4;
+    --var6: #565656;
 }
 
 /* Cleaning default formatting */
@@ -31,12 +33,9 @@ body {
 }
 
 main {
-    width: 920px;
+    width: 950px;
     margin: 0 auto;
-}
-
-#posting-area, #side-content {
-    background-color: orange;
+    padding: 15px;
 }
 
 #posting-area {
@@ -44,7 +43,7 @@ main {
     float: left;
 }
 
-#side-content {
+#side-area {
     width: 240px;
     float: right;
 }
@@ -53,6 +52,23 @@ main {
     padding: 20px;
     margin-bottom: 20px;
     background-color: #fff;
+}
+
+.side-content {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.side-posting {
+    font-size: 0.8em;
+    padding: 5px;
+    border-bottom: 1px dotted var(--var4);
+}
+
+.side-posting a.category-link {
+    display: block;
+    font-size: 1.3em;
 }
 
 footer {
@@ -67,16 +83,27 @@ footer {
 /** Menu formatting **/
 a {
     text-decoration: none;
-    padding: 8px 12px;
 }
 
 a:link, a:visited {
-    color: #fff;
+    color: var(--var2);
+    font-weight: 600;
 }
 
 a:hover {
+    text-decoration: underline;
+}
+
+#menu-area a:link, #menu-area a:visited {
+    color: #fff;
+    padding: 8px 12px;
+    font-weight: normal;
+}
+
+#menu-area a:hover {
     background-color: #fff;
     color: var(--var2);
+    text-decoration: none;
 }
 
 /** Genereal formatting **/
@@ -85,6 +112,28 @@ h1 {
     font-size: 2.5em;
 }
 
+h2 {
+    color: var(--var2);
+}
+
+h3 {
+    color: var(--var6);
+    background-color: var(--var4);
+    padding: 5px;
+}
+
 .white {
     color: #fff;
+}
+
+.posting-date {
+    font-size: 0.8em;
+    border-bottom: 1px solid var(--var5);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.last-side-posting {
+    border-bottom: none;
 }
